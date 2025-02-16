@@ -12,7 +12,7 @@ router.get("/getUser", authenticateUser, controller.getUserDetails);
 router.get("/getUserActivity", authenticateUser, controller.getUserActivitiesByDay);
 router.post("/addActivity", authenticateUser, controller.addActivityForUser);
 router.post("/completeActivity", authenticateUser, controller.markActivityComplete);
-
+router.get("/getActivitiesByCategory", authenticateUser, controller.getActivitiesByCategory);
 
 
 export default router
